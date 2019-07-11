@@ -1,0 +1,5 @@
+"0","lbr_SC %>%"
+"0","  leaflet() %>%"
+"0","  addTiles() %>%"
+"0","  addCircleMarkers(~Longitude, ~Latitude, label = ~Label, radius = 2) %>%"
+"0","  addPolylines(~Longitude, ~Latitude)"

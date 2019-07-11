@@ -1,0 +1,9 @@
+"0","knitr::opts_chunk$set(echo = TRUE)"
+"0","library(tibble)"
+"0","library(sf)"
+"0","library(leaflet)"
+"0","library(mapedit)"
+"0","library(rvest)"
+"2","package ‘rvest’ was built under R version 3.5.3"
+"2","Carregando pacotes exigidos: xml2
+"

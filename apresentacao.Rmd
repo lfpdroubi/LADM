@@ -3,7 +3,10 @@ title: "LADM"
 subtitle: "Aplicado a bens imóveis da União"
 author: "Luiz Fernando Palin Droubi<br> Willian Zonato"
 output:
-  ioslides_presentation: default
+  ioslides_presentation: 
+    css: styles.css
+    fig_caption: yes
+    keep_md: yes
   slidy_presentation: default
   powerpoint_presentation: default
   beamer_presentation: default
@@ -17,10 +20,51 @@ library(leaflet)
 library(knitr)
 ```
 
+# Importância do cadastro de bens da União
 
-# Decreto 8400/2015
+---
 
-## Decreto 8400/2015 | 
+![Bens da União](https://cdn.shopify.com/s/files/1/0116/7373/1130/articles/linha_3496_imagem_0_questao-organizacao-dos-estados.jpg?v=1535828132)
+
+---
+
+![Atual situação cadastral no Brasil. Fonte: Frederico, 2014](images/image9.jpg)
+
+---
+
+![Plataforma Continental Jurídica Brasileira. Fonte: CAVALCANTI, 2011.](images/images-002.jpg)
+
+---
+
+![Órgãos responsáveis pelo cadastro de bens públicos. Fonte: Frederico, 2014](images/images-003.jpg)
+
+---
+
+![O cadastro como motor do Sistema de Administração da Terra. Fonte: Adaptado de Williamson et al (2010)](images/images-009.jpg){width=600px}
+
+---
+
+![Modelagem do SIAPA em UML](images/image21.jpg)
+
+
+---
+
+![Modelagem do SPIUNet em UML](images/images-033.jpg)
+
+
+---
+
+![Proposta de Unificação SIAPA e SPIUNet](images/images-034.jpg)
+
+
+
+# Questões técnicas
+
+---
+
+![Linha média das enchentes ordinárias. Fonte: Saule Júnior et al (2006).](images/images-001.jpg)
+
+## Decreto 8400/2015 {.emphasized}
 
 - Estabelece os pontos apropriados para o traçado da Linha de Base do Brasil ao longo da costa brasileira continental e insular e dá outras providências.
 
@@ -48,7 +92,7 @@ lbr_SC <- tribble(
 ```
   
 ```{r}
-kable(lbr_SC)
+kable(head(lbr_SC))
 ```
 
   
@@ -62,3 +106,4 @@ lbr_SC %>%
   addCircleMarkers(~Longitude, ~Latitude, label = ~Label, radius = 2) %>%
   addPolylines(~Longitude, ~Latitude)
 ```
+

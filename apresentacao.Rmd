@@ -58,12 +58,6 @@ library(knitr)
 
 
 
-# Questões técnicas
-
----
-
-![Linha média das enchentes ordinárias. Fonte: Saule Júnior et al (2006).](images/images-001.jpg)
-
 ## Decreto 8400/2015 {.emphasized}
 
 - Estabelece os pontos apropriados para o traçado da Linha de Base do Brasil ao longo da costa brasileira continental e insular e dá outras providências.
@@ -107,7 +101,13 @@ lbr_SC %>%
   addPolylines(~Longitude, ~Latitude)
 ```
 
-## Situação SPU
+# Questões técnicas
+
+---
+
+![Linha média das enchentes ordinárias. Fonte: Saule Júnior et al (2006).](images/images-001.jpg)
+
+# Situação SPU
 
 1. Cessão de Espaço Aquático / Certidão de Disponibilidade
 
@@ -120,6 +120,6 @@ Fases:
 
 ## Exemplo
 
-[Exemplo de Processo Cessão](../Cessao_Deter.pdf)
+[Exemplo de Processo Cessão](refs/Cessao_Deter.pdf)
 
-
+[Exemplo Corrigido](refs/Cessao_Deter_corrigida.pdf)

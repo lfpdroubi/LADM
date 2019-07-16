@@ -107,3 +107,19 @@ lbr_SC %>%
   addPolylines(~Longitude, ~Latitude)
 ```
 
+## Situação SPU
+
+1. Cessão de Espaço Aquático / Certidão de Disponibilidade
+
+Fases:
+
+* Cadastro
+* Análise Documental
+* Avaliação
+* Elaboração do Contrato de Cessão
+
+## Exemplo
+
+[Exemplo de Processo Cessão](../Cessao_Deter.pdf)
+
+
